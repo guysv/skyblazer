@@ -28,12 +28,14 @@ export default class extends Phaser.Scene {
   {
     // Load needed assets
     this.load.bitmapFont('dos-font', 'assets/dosfont.png', 'assets/dosfont.xml');
-    this.load.image('title-bg', 'assets/title-placeholder.png')
+    this.load.image('title-bg', 'assets/title.png')
   }
 
   create ()
   {
-    this.add.image(config.width / 2, config.height / 2, 'title-bg').alpha = 0.5
+    var bg = this.add.image(config.width / 2, config.height / 2, 'title-bg')
+    bg.alpha = 0.5
+    bg.setScale(4)
     
     var scene = this
     var timer = scene.time.addEvent({delay: 1500, repeat: credits.length, callback: function() {
@@ -60,7 +62,7 @@ export default class extends Phaser.Scene {
 
   finish()
   {
-    this.scene.start('SplashScene')
+    this.scene.start('MenuScene')
   }
 
   addText(x, y, text, color=0xffff00)

@@ -29,18 +29,17 @@ export default {
     // Globals hack
     level_order: level_order,
     current_level: 0,
-    time_left: 120,
+    time_left: 300,
 
     plugins: {
       global: [ NineSlicePlugin.DefaultCfg ]
     },
     scene: [
+        SplashScene,
         MenuScene,
         CreditsScene,
-        SplashScene
-    ].concat(level_config_array).concat([
         GameOver
-    ]),
+    ].concat(level_config_array)
     // scene: [
     //     AlphabetLevel,
     //     QuoteLevel,

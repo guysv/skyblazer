@@ -8,6 +8,12 @@ export default class extends Phaser.Scene {
         // Load needed assets
         this.load.image('box-9p', 'assets/box.9p.scaled.png')
         this.load.bitmapFont('dos-font', 'assets/dosfont.png', 'assets/dosfont.xml');
+        this.load.image('title-bg', 'assets/title.png')
+    }
+
+    create ()
+    {
+        this.add.image(config.width / 2, config.height / 2, 'title-bg').setScale(4)
     }
 
     nextLevel()
@@ -19,7 +25,7 @@ export default class extends Phaser.Scene {
         }
         else
         {
-            this.scene.start('GameOver')
+            this.scene.start('CreditsScene')
         }
     }
 
