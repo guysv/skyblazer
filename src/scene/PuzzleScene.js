@@ -25,7 +25,7 @@ export default class extends Phaser.Scene {
         }
         else
         {
-            this.scene.start('CreditsScene')
+            this.scene.start('WinScene')
         }
     }
 

@@ -20,7 +20,7 @@ export default class extends PuzzleScene {
                            "Looking at these words, you smile with glee and relief.\n" +
                           "You and your friend feel as if you were transported back to your childhood,\n" +
                           "reliving the fond memories of SKYBLAZER, gazing at the open space with sheer awe.\n\n" +
-                          "For a few hours, you are back at home.");"
+                          "For a few hours, you are back at home.");
 
                            var scene = this
                            this.input.keyboard.on('keydown', function (event) {
