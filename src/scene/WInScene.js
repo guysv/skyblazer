@@ -6,7 +6,7 @@ export default class extends PuzzleScene {
 
   constructor ()
   {
-      super({ key: 'GameOver' });
+      super({ key: 'WinScene' });
   }
 
     create ()

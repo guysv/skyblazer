@@ -9,6 +9,7 @@ import SplashScene from './scene/SplashScene';
 import CreditsScene from './scene/CreditsScene';
 import MenuScene from './scene/MenuScene';
 import BriefingScene from './scene/BriefingScene';
+import WInScene from './scene/WInScene';
 
 var level_to_obj = {
     'QuoteLevel': QuoteLevel,
@@ -41,7 +42,8 @@ export default {
         MenuScene,
         CreditsScene,
         BriefingScene,
-        GameOver
+        GameOver,
+        WInScene
     ].concat(level_config_array)
     // scene: [
     //     AlphabetLevel,

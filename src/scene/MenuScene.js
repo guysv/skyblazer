@@ -27,6 +27,8 @@ export default class extends Phaser.Scene {
     this.add.image(config.width / 2, config.height * 3 / 4, 'manual-btn')
     this.add.image(config.width / 2, config.height * 3 / 4 + 50, 'credits-btn')
     this.dot = this.add.image(config.width / 2 - 70, config.height * 3 / 4 - 50, 'dot-ui')
+
+    config.current_level = 0;
     
     var scene = this
     scene.next_scenes = [
