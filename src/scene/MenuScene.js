@@ -29,6 +29,7 @@ export default class extends Phaser.Scene {
     this.dot = this.add.image(config.width / 2 - 70, config.height * 3 / 4 - 50, 'dot-ui')
 
     config.current_level = 0;
+    config.time_left = config.initial_time
     
     var scene = this
     scene.next_scenes = [

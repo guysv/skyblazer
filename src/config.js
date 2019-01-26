@@ -31,8 +31,8 @@ export default {
     // Globals hack
     level_order: level_order,
     current_level: 0,
-    initial_time: 600,
-    time_left: 600,
+    initial_time: 300,
+    time_left: 300,
 
     plugins: {
       global: [ NineSlicePlugin.DefaultCfg ]

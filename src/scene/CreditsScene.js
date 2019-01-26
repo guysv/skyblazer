@@ -37,8 +37,6 @@ export default class extends Phaser.Scene {
 
   create ()
   {
-    config.time_left = config.initial_time
-
     var bg = this.add.image(config.width / 2, config.height / 2, 'title-bg')
     bg.alpha = 0.5
     bg.setScale(4)
