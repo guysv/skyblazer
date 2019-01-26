@@ -11,7 +11,8 @@ export default class extends Phaser.Scene {
   preload ()
   {
     // Load needed assets
-    this.load.audio('main-tune', ['assets/tune.ogg'])
+    this.load.audio('main-tune', ['assets/tune.ogg'], {volume: 0.5})
+    this.load.audio('voice', ['assets/voice.ogg'])
     this.load.spritesheet('splash', 'assets/splash.png', { frameWidth: 320, frameHeight: 200})
   }
 
@@ -27,9 +28,11 @@ export default class extends Phaser.Scene {
 
     sprite.anims.load('splash-anim');
     sprite.anims.play('splash-anim');
+    
 
     var scene = this
     this.input.keyboard.on('keydown', function (e) {
+      scene.sound.add('voice').play()
       scene.scene.start('MenuScene')
     })
 
