@@ -34,7 +34,7 @@ export default class extends Phaser.Scene {
       {
         "offset": config.height * 3 / 4 - 50,
         "handler": function() {
-          scene.scene.start(config.level_order[0])
+          scene.scene.start("BriefingScene")
         }
       },
       // Fire manual

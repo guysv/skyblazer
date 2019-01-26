@@ -63,20 +63,20 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(440, 240, 400, 220, 'box-9p', [12, 28, 28, 12])
-    this.addText(460, 270, "TRANSLATE THE KIRIONIC TEXT:")
+    this.add.nineslice(440, 240, 420, 220, 'box-9p', [12, 28, 28, 12])
+    this.addText(460, 260, "TRANSLATE THE KIRIONIC TEXT:")
     this.word = _.sample(alien_words)
     var self = this
-    var x = 480
+    var x = 470
     _.forEach(this.word.split(""), function(val) {
-      self.addCharByIndex(x, 300, char_to_index[val])
+      self.addCharByIndex(x, 310, char_to_index[val])
       x += 20
     })
-    this.add.rectangle(460 + 50, 376, 100, 22, 0x5f574f)
+    this.add.rectangle(460 + 70, 380, 140, 32, 0x5f574f)
     this.addInput(464, 370);
 
     this.addProgress(460, 420)
-    this.addTimer(620, 420)
+    this.addTimer(670, 420)
     
     console.log(this.word.toUpperCase()) //cheat
   }

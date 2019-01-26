@@ -11,7 +11,7 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(440, 240, 400, 220, 'box-9p', [12, 28, 28, 12])
+    this.add.nineslice(420, 240, 440, 230, 'box-9p', [12, 28, 28, 12])
     this.addText(460, 270, "DECIPHER THE PIN CODE:")
     this.key = _.times(_.random(5, 8), () => _.random(35).toString(36)).join('').toUpperCase()
     this.addText(460, 300, "[" + this.key + "]")
@@ -81,11 +81,11 @@ export default class extends PuzzleScene {
     console.log(this.solution)
 
 
-    this.add.rectangle(460 + 50, 376, 100, 22, 0x5f574f)
+    this.add.rectangle(460 + 70, 380, 140, 32, 0x5f574f)
     this.addInput(464, 370);
 
-    this.addProgress(460, 420)
-    this.addTimer(620, 420)
+    this.addProgress(440, 420)
+    this.addTimer(670, 420)
 
     console.log(this.solution) //cheat
   }

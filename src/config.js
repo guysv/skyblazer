@@ -8,6 +8,7 @@ import _ from 'lodash'
 import SplashScene from './scene/SplashScene';
 import CreditsScene from './scene/CreditsScene';
 import MenuScene from './scene/MenuScene';
+import BriefingScene from './scene/BriefingScene';
 
 var level_to_obj = {
     'QuoteLevel': QuoteLevel,
@@ -29,7 +30,8 @@ export default {
     // Globals hack
     level_order: level_order,
     current_level: 0,
-    time_left: 300,
+    initial_time: 600,
+    time_left: 600,
 
     plugins: {
       global: [ NineSlicePlugin.DefaultCfg ]
@@ -38,6 +40,7 @@ export default {
         SplashScene,
         MenuScene,
         CreditsScene,
+        BriefingScene,
         GameOver
     ].concat(level_config_array)
     // scene: [

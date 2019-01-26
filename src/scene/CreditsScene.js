@@ -11,7 +11,11 @@ var credits = [
   '',
   'WRITTEN UNDER 36 HOURS DURING\nTHE GLOBAL GAME JAM 2019',
   '',
-  'SPECIAL THANKS TO: [people_to_thank]',
+  'SPECIAL THANKS TO:',
+  '- SG INTERACTIVE',
+  '- PHOTONSTORM',
+  '- PEOPLE WHO TRIED TO EMBED',
+  '  DRM BEFORE THE INTERNET',
   '',
   '',
   '(C) 1989 GAMEPUNKS INC.'
@@ -33,17 +37,19 @@ export default class extends Phaser.Scene {
 
   create ()
   {
+    config.time_left = config.initial_time
+
     var bg = this.add.image(config.width / 2, config.height / 2, 'title-bg')
     bg.alpha = 0.5
     bg.setScale(4)
     
     var scene = this
     var timer = scene.time.addEvent({delay: 1500, repeat: credits.length, callback: function() {
-      var entry = scene.addText(420, config.height, credits[credits.length - timer.repeatCount])
+      var entry = scene.addText(350, config.height, credits[credits.length - timer.repeatCount])
       var count = timer.repeatCount
       scene.tweens.add({
         targets: entry,
-        y: -70,
+        y: -100,
         duration: 20000,
         onComplete: function () {
           if (!count) {
@@ -68,7 +74,7 @@ export default class extends Phaser.Scene {
   addText(x, y, text, color=0xffff00)
   {
     var text = this.add.bitmapText(x, y, "dos-font", text)
-    text.setFontSize(32)
+    text.setFontSize(48)
     text.tint = color
     return text
   }
