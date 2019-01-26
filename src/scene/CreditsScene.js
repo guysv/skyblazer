@@ -64,10 +64,10 @@ export default class extends Phaser.Scene {
   }
 
   addText(x, y, text, color=0xffff00)
-    {
-        var text = this.add.bitmapText(x, y, "dos-font", text)
-        text.setFontSize(32)
-        text.tint = color
-        return text
-    }
+  {
+    var text = this.add.bitmapText(x, y, "dos-font", text)
+    text.setFontSize(32)
+    text.tint = color
+    return text
+  }
 }
