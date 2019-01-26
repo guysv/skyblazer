@@ -5,6 +5,8 @@ import AlphabetLevel from './level/AlphabetLevel';
 import ImageLevel from './level/ImageLevel';
 import CodeLevel from './level/CodeLevel';
 import _ from 'lodash'
+import SplashScene from './scene/SplashScene';
+import CreditsScene from './scene/CreditsScene';
 
 var level_to_obj = {
     'QuoteLevel': QuoteLevel,
@@ -32,7 +34,8 @@ export default {
       global: [ NineSlicePlugin.DefaultCfg ]
     },
     scene: [
-        
+        CreditsScene,
+        SplashScene
     ].concat(level_config_array).concat([
         GameOver
     ]),
