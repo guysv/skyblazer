@@ -11,7 +11,7 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(420, 240, 440, 230, 'box-9p', [12, 28, 28, 12])
+    this.add.nineslice(105, 60, 110, 57, 'box-9p', [3, 7, 7, 3])
     this.addText(460, 270, "DECIPHER THE PIN CODE:")
     this.key = _.times(_.random(5, 8), () => _.random(35).toString(36)).join('').toUpperCase()
     this.addText(460, 300, "[" + this.key + "]")

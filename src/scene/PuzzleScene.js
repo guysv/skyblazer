@@ -6,14 +6,14 @@ export default class extends Phaser.Scene {
     preload ()
     {
         // Load needed assets
-        this.load.image('box-9p', 'src/assets/box.9p.scaled.png')
+        this.load.image('box-9p', 'src/assets/box.9p.png')
         this.load.bitmapFont('dos-font', 'src/assets/dosfont.png', 'src/assets/dosfont.xml');
         this.load.image('title-bg', 'src/assets/title.png')
     }
 
     create ()
     {
-        this.add.image(config.width / 2, config.height / 2, 'title-bg').setScale(4)
+        this.add.image(config.width / 2, config.height / 2, 'title-bg')
     }
 
     nextLevel()
@@ -32,7 +32,7 @@ export default class extends Phaser.Scene {
     addText(x, y, text, color=0x5f574f)
     {
         var text = this.add.bitmapText(x, y, "dos-font", text)
-        text.setFontSize(24)
+        // text.setFontSize(24)
         text.tint = color
         return text
     }

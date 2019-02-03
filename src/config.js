@@ -24,8 +24,12 @@ var level_config_array = _.map(level_order, function(v) { return level_to_obj[v]
 export default {
     type: Phaser.AUTO,
     parent: 'phaser-example',
-    width: 1280,
-    height: 800,
+    width: 320,
+    height: 200,
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    },
     backgroundColor: 0x000000,
     pixelArt: true,
     // Globals hack

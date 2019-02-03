@@ -13,7 +13,7 @@ export default class extends PuzzleScene {
     {
       // hack
     super.create()
-    this.add.nineslice(250, 170, 820, 520, 'box-9p', [12, 28, 28, 12])
+    this.add.nineslice(250, 170, 820, 520, 'box-9p', [3, 7, 7, 3])
     this.addText(620, 200, ":DRM:")
     this.addText(270, 240,
                            "You have bypassed the SKYBLAZER Copy Protection Test.\nThe game will now be made available.\n" +

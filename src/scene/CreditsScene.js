@@ -39,7 +39,7 @@ export default class extends Phaser.Scene {
   {
     var bg = this.add.image(config.width / 2, config.height / 2, 'title-bg')
     bg.alpha = 0.5
-    bg.setScale(4)
+  
     
     var scene = this
     var timer = scene.time.addEvent({delay: 1500, repeat: credits.length, callback: function() {

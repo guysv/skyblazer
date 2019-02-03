@@ -63,7 +63,7 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(440, 240, 420, 220, 'box-9p', [12, 28, 28, 12])
+    this.add.nineslice(110, 60, 105, 55, 'box-9p', [3, 7, 7, 3])
     this.addText(460, 260, "TRANSLATE THE KIRIONIC TEXT:")
     this.word = _.sample(alien_words)
     var self = this

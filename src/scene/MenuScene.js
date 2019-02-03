@@ -21,12 +21,12 @@ export default class extends Phaser.Scene {
 
   create ()
   {
-    this.add.image(config.width / 2, config.height / 2, 'title-bg').setScale(4)
+    this.add.image(config.width / 2, config.height / 2, 'title-bg')
     this.add.image(config.width / 2, config.height * 3 / 4, 'menu-bg')
-    this.add.image(config.width / 2, config.height * 3 / 4 - 50, 'start-btn')
+    this.add.image(config.width / 2, config.height * 3 / 4 - 14, 'start-btn')
     this.add.image(config.width / 2, config.height * 3 / 4, 'manual-btn')
-    this.add.image(config.width / 2, config.height * 3 / 4 + 50, 'credits-btn')
-    this.dot = this.add.image(config.width / 2 - 70, config.height * 3 / 4 - 50, 'dot-ui')
+    this.add.image(config.width / 2, config.height * 3 / 4 + 14, 'credits-btn')
+    this.dot = this.add.image(config.width / 2 - 20, config.height * 3 / 4 - 14, 'dot-ui')
 
     config.current_level = 0;
     config.time_left = config.initial_time
@@ -35,7 +35,7 @@ export default class extends Phaser.Scene {
     scene.next_scenes = [
       // Start DRM
       {
-        "offset": config.height * 3 / 4 - 50,
+        "offset": config.height * 3 / 4 - 14,
         "handler": function() {
           scene.scene.start("BriefingScene")
         }
@@ -50,7 +50,7 @@ export default class extends Phaser.Scene {
       },
       // Credits
       {
-        "offset": config.height * 3 / 4 + 50,
+        "offset": config.height * 3 / 4 + 14,
         "handler": function() {
           scene.scene.start('CreditsScene')
         }

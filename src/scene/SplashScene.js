@@ -24,7 +24,7 @@ export default class extends Phaser.Scene {
       'frameRate': 8,
     })
 
-    var sprite = this.add.sprite(config.width / 2, config.height / 2, 'splash').setScale(4);
+    var sprite = this.add.sprite(config.width / 2, config.height / 2, 'splash');
 
     sprite.anims.load('splash-anim');
     sprite.anims.play('splash-anim');
