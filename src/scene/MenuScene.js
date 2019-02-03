@@ -11,12 +11,12 @@ export default class extends Phaser.Scene {
   preload ()
   {
     // Load needed assets
-    this.load.image('title-bg', 'assets/title.png')
-    this.load.image('menu-bg', 'assets/MenuBG.png')
-    this.load.image('start-btn', 'assets/Start.png')
-    this.load.image('manual-btn', 'assets/Manual.png')
-    this.load.image('credits-btn', 'assets/Credits.png')
-    this.load.image('dot-ui', 'assets/Dot.png')
+    this.load.image('title-bg', 'src/assets/title.png')
+    this.load.image('menu-bg', 'src/assets/MenuBG.png')
+    this.load.image('start-btn', 'src/assets/Start.png')
+    this.load.image('manual-btn', 'src/assets/Manual.png')
+    this.load.image('credits-btn', 'src/assets/Credits.png')
+    this.load.image('dot-ui', 'src/assets/Dot.png')
   }
 
   create ()

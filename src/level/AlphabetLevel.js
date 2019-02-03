@@ -57,7 +57,7 @@ export default class extends PuzzleScene {
   {
     super.preload()
     // Load needed assets
-    this.load.spritesheet('alien-alphabet', 'assets/alien-alphabet.png', { frameWidth: 19, frameHeight: 24, endFrame: 26 })
+    this.load.spritesheet('alien-alphabet', 'src/assets/alien-alphabet.png', { frameWidth: 19, frameHeight: 24, endFrame: 26 })
   }
 
   create ()

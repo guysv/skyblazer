@@ -12,7 +12,7 @@ export default class extends Phaser.Scene {
   preload ()
   {
     // Load needed assets
-    this.load.bitmapFont('dos-font', 'assets/dosfont.png', 'assets/dosfont.xml');
+    this.load.bitmapFont('dos-font', 'src/assets/dosfont.png', 'src/assets/dosfont.xml');
   }
 
   create ()

@@ -11,9 +11,9 @@ export default class extends Phaser.Scene {
   preload ()
   {
     // Load needed assets
-    this.load.audio('main-tune', ['assets/tune.ogg'], {volume: 0.5})
-    this.load.audio('voice', ['assets/voice.ogg'])
-    this.load.spritesheet('splash', 'assets/splash.png', { frameWidth: 320, frameHeight: 200})
+    this.load.audio('main-tune', ['src/assets/tune.ogg'], {volume: 0.5})
+    this.load.audio('voice', ['src/assets/voice.ogg'])
+    this.load.spritesheet('splash', 'src/assets/splash.png', { frameWidth: 320, frameHeight: 200})
   }
 
   create ()

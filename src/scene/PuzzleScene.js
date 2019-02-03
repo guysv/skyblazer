@@ -6,9 +6,9 @@ export default class extends Phaser.Scene {
     preload ()
     {
         // Load needed assets
-        this.load.image('box-9p', 'assets/box.9p.scaled.png')
-        this.load.bitmapFont('dos-font', 'assets/dosfont.png', 'assets/dosfont.xml');
-        this.load.image('title-bg', 'assets/title.png')
+        this.load.image('box-9p', 'src/assets/box.9p.scaled.png')
+        this.load.bitmapFont('dos-font', 'src/assets/dosfont.png', 'src/assets/dosfont.xml');
+        this.load.image('title-bg', 'src/assets/title.png')
     }
 
     create ()
