@@ -24,6 +24,10 @@ var level_config_array = _.map(level_order, function(v) { return level_to_obj[v]
 export default {
     type: Phaser.AUTO,
     parent: 'phaser-example',
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    },
     width: 1280,
     height: 800,
     backgroundColor: 0x000000,
