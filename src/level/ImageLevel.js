@@ -35,10 +35,10 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(100, 67, 102, 95, 'box-9p', [3, 7, 7, 3])
+    this.add.nineslice(400, 270, 410, 380, 'box-9p', [12, 28, 28, 12])
     this.addText(440, 300, "ENTER IMAGE CODE:")
     this.image_index = _.sample(Object.keys(image_to_code))
-    this.add.image(600, 440, this.image_index)
+    this.add.image(600, 440, this.image_index).setScale(4)
 
     this.add.rectangle(440 + 70, 570, 140, 32, 0x5f574f)
     this.addInput(444, 560);

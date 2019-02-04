@@ -3622,10 +3622,10 @@ phaser3-nineslice@^0.4.0:
     phaser "^3.13.0"
     webpack-cli "^3.1.1"
 
-phaser@3.16.0-rc3:
-  version "3.16.0-rc3"
-  resolved "https://registry.yarnpkg.com/phaser/-/phaser-3.16.0-rc3.tgz#125d0fb74d5a48a3df2892680009b72cb61764fc"
-  integrity sha512-H21KtIw0aIGSElBx0fCX2FiuqlQTsQ7WmuR80a5t3QSUblJ03UgRU0W3NXM1ofqr4FygGsOxqkwMet4D6Asaow==
+phaser@3.16.0-rc1:
+  version "3.16.0-rc1"
+  resolved "https://registry.yarnpkg.com/phaser/-/phaser-3.16.0-rc1.tgz#859af3c95730588c1b6b04765167d125e8f615ce"
+  integrity sha512-S/fkz0OvUiCpqls6BdXElVQlnx+IgY8AF8Ez5F1/3k1BueCKbw8pVdBjx5bAcO1cPHJSNObKGAt8q2CnvVx0wQ==
   dependencies:
     eventemitter3 "^3.1.0"
     exports-loader "^0.7.0"

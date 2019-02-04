@@ -23,7 +23,7 @@ export default class extends PuzzleScene {
     create ()
     {
         super.create()
-        this.add.nineslice(440, 240, 490, 230, 'box-9p', [3, 7, 7, 3])
+        this.add.nineslice(440, 240, 490, 230, 'box-9p', [12, 28, 28, 12])
         this.addText(460, 270, "INSERT THE QUOTE CODE FOR:")
 
         this.quote = _.sample(Object.keys(quotes))

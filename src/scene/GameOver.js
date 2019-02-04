@@ -13,7 +13,7 @@ export default class extends PuzzleScene {
     {
       // hack
     super.create()
-    this.add.nineslice(250, 170, 820, 520, 'box-9p', [3, 7, 7, 3])
+    this.add.nineslice(250, 170, 820, 520, 'box-9p', [12, 28, 28, 12])
     this.addText(620, 200, ":DRM:")
     this.addText(270, 240, "!!! WARNING !!!\n" +
                            "Illegitimate copy detected.\n"+"In compliance with the terms of service, this software shall\n"+

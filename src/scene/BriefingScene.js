@@ -12,8 +12,8 @@ export default class extends PuzzleScene {
   create ()
   {
     super.create()
-    this.add.nineslice(62, 42, 205, 155, 'box-9p', [3, 7, 7, 3])
-    this.addText(155, 50, ":DRM:")
+    this.add.nineslice(250, 170, 820, 520, 'box-9p', [12, 28, 28, 12])
+    this.addText(620, 200, ":DRM:")
     this.addText(270, 240, "SKYBLAZER requires you to pass a copy protection test to play.\n" +
                            "Please make sure you have both parts of the SKYBLAZER Copy\nProtection Manual at hand, available from the main menu.\n\n\n" +
                            "!!! READ ITS INSTRUCTIONS CAREFULLY. !!!\n" + 
