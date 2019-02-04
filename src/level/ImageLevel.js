@@ -22,14 +22,14 @@ export default class extends PuzzleScene {
   preload ()
   {
     super.preload()
-    this.load.image('img-supercomputer', 'src/assets/Computer.png')
-    this.load.image('img-engine', 'src/assets/Engine.png')
-    this.load.image('img-astrofood', 'src/assets/Astrofood.png')
-    this.load.image('img-uniform', 'src/assets/Uniform.png')
-    this.load.image('img-dogfight', 'src/assets/Dogfight.png') //TODO: dogfight..
-    this.load.image('img-weapon', 'src/assets/Weapon.png')
-    this.load.image('img-soldier', 'src/assets/Soldier.png')
-    this.load.image('img-earth', 'src/assets/Earth.png')
+    this.load.image('img-supercomputer', 'assets/Computer.png')
+    this.load.image('img-engine', 'assets/Engine.png')
+    this.load.image('img-astrofood', 'assets/Astrofood.png')
+    this.load.image('img-uniform', 'assets/Uniform.png')
+    this.load.image('img-dogfight', 'assets/Dogfight.png') //TODO: dogfight..
+    this.load.image('img-weapon', 'assets/Weapon.png')
+    this.load.image('img-soldier', 'assets/Soldier.png')
+    this.load.image('img-earth', 'assets/Earth.png')
   }
 
   create ()
