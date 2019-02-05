@@ -1,4 +1,4 @@
-<img src="assets/title.png" width="100%">
+<img src="assets/title.png" width="640" height="400">
 
 A phaser 3 game created during the Global Game Jam 2019
 
