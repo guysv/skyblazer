@@ -30,7 +30,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "phaser": "3.16.0-rc3",
     "phaser3-nineslice": "^0.4.0"
   }
